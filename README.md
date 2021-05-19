@@ -50,7 +50,21 @@ New improvements will be made to the website to allow new functions and improve 
 ## Video Games App
 
 ![Home Page](https://github.com/bryanAguilar001/angular-videogame-app/blob/main/media/home.PNG?raw=true)
+
+> Home page
+
 ![About tab](https://github.com/bryanAguilar001/angular-videogame-app/blob/main/media/detail.PNG?raw=true)
+
+> Detail page - About Tab
+
 ![Screnshots tab](https://github.com/bryanAguilar001/angular-videogame-app/blob/main/media/screenshots.PNG?raw=true)
+
+> Detail page - Screnshots Tab
+
 ![Trailers tab](https://github.com/bryanAguilar001/angular-videogame-app/blob/main/media/trailers.PNG?raw=true)
+
+> Detail page - Trailers Tab
+
 ![Footer](https://github.com/bryanAguilar001/angular-videogame-app/blob/main/media/footer.PNG?raw=true)
+
+> Home page - Footer
