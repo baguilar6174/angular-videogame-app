@@ -15,7 +15,7 @@ Run `npm i` and `ng serve` for a dev server. Navigate to `http://localhost:4200/
 
 ### Links
 
-Solution URL: [Live demo]()
+Solution URL: [Live demo](https://videogames-app.netlify.app/)
 
 ## My process
 
