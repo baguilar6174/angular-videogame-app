@@ -1,0 +1,45 @@
+<div class="filters">
+    <mat-form-field>
+        <mat-label>Sort games by</mat-label>
+        <mat-select
+            panelClass="sort-select"
+            [(ngModel)]="sort"
+            (selectionChange)="searchGames(sort)"
+        >
+            <mat-option value="name">Name</mat-option>
+            <mat-option value="-released">Released</mat-option>
+            <mat-option value="-added">Added</mat-option>
+            <mat-option value="-created">Created</mat-option>
+            <mat-option value="-updated">Updated</mat-option>
+            <mat-option value="-rating">Rating</mat-option>
+            <mat-option value="metacritic">Metacritic</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<!-- Games section -->
+<div class="games">
+    <!-- Load all games from api -->
+    <ng-container *ngFor="let game of games">
+
+        <div class="game" (click)="gameDetails(game.id)">
+            <div class="game-thumb-container">
+                <!-- Cover image -->
+                <img *ngIf="game.background_image" [src]="game.background_image" alt="thumbnail"
+                    class="game-thumbnail" />
+                <img *ngIf="!game.background_image" src="assets/images/no-image.png" alt="thumbnail"
+                    class="game-thumbnail" />
+            </div>
+            <div class="game-description">
+                <!-- Game name -->
+                <p class="game-name">{{game.name}}</p>
+                <!-- Game platforms -->
+                <div class="game-platforms">
+                    <img *ngFor="let platform of game.parent_platforms" class="game-platform"
+                        src="assets/images/platforms/{{ platform.platform.slug }}.svg" [alt]="platform.platform.slug">
+                </div>
+            </div>
+        </div>
+
+    </ng-container>
+</div>

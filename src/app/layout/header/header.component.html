@@ -1,0 +1,8 @@
+<div class="search-container">
+    <form [formGroup]="searchForm" (ngSubmit)="onSubmit()" class="search-fomr">
+        <span class="logo hide-for-mobile" routerLink="/">Angular Video Games</span>
+        <input class="search-input" formControlName="text" name="search" placeholder="Search a game games" type="text">
+        <button type="submit" class="search-button">Search</button>
+    </form>
+    <a class="text hide-for-mobile" href="https://bryanaguilar.gatsbyjs.io/" target="_blank">Bryan Aguilar</a>
+</div>

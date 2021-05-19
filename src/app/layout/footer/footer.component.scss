@@ -1,0 +1,29 @@
+// Footer style
+.footer {
+    height: 120px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    &-text {
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    &-icons {
+        display: block;
+        font-size: 50px;
+        text-align: center;
+        
+        .icon {
+            color: #fff;
+            padding-left: 25px;
+
+            &:hover{
+                color: #64ffda;
+            }
+        }
+    }
+}
